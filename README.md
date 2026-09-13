@@ -1,0 +1,60 @@
+# introduce-web
+
+Landing de [Introduce](https://github.com/steven230500/introduce-church), el
+software de proyección para iglesias.
+
+HTML y CSS a mano, sin build, sin dependencias. Se abre `index.html` en el
+navegador y ya está: lo que se ve en local es exactamente lo que se publica.
+
+```
+index.html      la página entera
+styles.css      un archivo, ordenado por sección
+assets/         capturas de la app y el ícono
+```
+
+## Verla
+
+```bash
+open index.html
+# o, si hace falta servirla por HTTP:
+python3 -m http.server 4321
+```
+
+## Publicarla
+
+Es estática, así que sirve cualquier cosa que entregue archivos.
+
+**Cloudflare Pages o Netlify.** Conectar el repo, sin comando de build, carpeta
+raíz. Es la opción con menos partes que se pueden romper.
+
+**El droplet, detrás de Caddy.** Copiar la carpeta y agregar el bloque:
+
+```
+introduce.tudominio.com {
+    root * /var/www/introduce-web
+    file_server
+    encode gzip
+}
+```
+
+## Actualizar las capturas
+
+Salen de la app real, no de un mockup. Están en el otro repo, en
+`docs/screenshots/`, y se copian aquí:
+
+```bash
+cp ../introduce_church/docs/screenshots/{panel-principal,editor-capas,avisos,biblia}.png assets/
+```
+
+Después conviene bajarlas de tamaño, porque salen a 2x de una pantalla Retina:
+
+```bash
+for f in assets/*.png; do sips -Z 1600 "$f"; done
+```
+
+## Los enlaces de descarga
+
+El botón de macOS apunta a la última release de GitHub del repo de la app. Para
+que descargue algo hay que publicar el `.zip` que produce `make dist-mac` como
+release ahí. Windows, Linux y la app de control están marcados como
+*Próximamente* y no llevan enlace todavía.
