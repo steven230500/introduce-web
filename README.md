@@ -6,10 +6,15 @@ software de proyección para iglesias.
 HTML y CSS a mano, sin build, sin dependencias. Se abre `index.html` en el
 navegador y ya está: lo que se ve en local es exactamente lo que se publica.
 
+Papel tibio, serif clásica para los títulos y franjas en pastel. Las capturas
+de la app son lo único oscuro de la página, que es justo lo que hace que uno
+las mire.
+
 ```
 index.html      la página entera
 styles.css      un archivo, ordenado por sección
 assets/         capturas de la app y el ícono
+tools/shot.mjs  capturas de la página, para revisar un cambio de diseño
 ```
 
 ## Verla
@@ -18,6 +23,14 @@ assets/         capturas de la app y el ícono
 open index.html
 # o, si hace falta servirla por HTTP:
 python3 -m http.server 4321
+```
+
+Para revisar un cambio de diseño sin estar mirando la ventana:
+
+```bash
+npm i -D playwright && npx playwright install chromium
+node tools/shot.mjs        # página completa a 1280
+node tools/shot.mjs 420    # a ancho de teléfono
 ```
 
 ## Publicarla
