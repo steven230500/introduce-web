@@ -211,6 +211,15 @@ p { margin: 0 0 16px; max-width: var(--measure); }
 
 .shot img { border-radius: 10px; }
 
+/* Says something true about the picture above it, in the picture's own frame
+   rather than floating in the page. */
+.shot figcaption {
+  padding: 10px 12px 4px;
+  font-size: 13px;
+  color: var(--ink-3);
+  text-align: center;
+}
+
 .shot.wide { margin-top: 56px; }
 
 /* A tall, narrow capture (the Bible panel) would otherwise sit in a wide
