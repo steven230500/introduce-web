@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- The picture a link shows when it is shared: WhatsApp, Facebook, search.
+     Rendered to assets/og-es.png and assets/og-en.png by tools/og.mjs. -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    overflow: hidden;
+    font-family: "Archivo", Arial, sans-serif;
+    color: #fffaf0;
+    background:
+      radial-gradient(ellipse 70% 60% at 50% -10%, rgba(255, 231, 176, 0.36), transparent 70%),
+      linear-gradient(180deg, #111d45 0%, #070d24 100%);
+  }
+  .rayos {
+    position: absolute;
+    inset: -40% -20% 0;
+    background: repeating-conic-gradient(from 164deg at 50% 0%, rgba(255, 238, 205, 0.08) 0deg 2.2deg, transparent 2.2deg 7deg);
+    -webkit-mask-image: radial-gradient(ellipse 60% 80% at 50% 0%, #000 20%, transparent 75%);
+  }
+  h1 {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    margin: 0;
+    padding: 0 110px 40px;
+    text-align: center;
+    font-size: 84px;
+    line-height: 1.02;
+    font-weight: 780;
+    font-stretch: 118%;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+  }
+  .pie {
+    position: absolute;
+    left: 64px;
+    right: 64px;
+    bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 28px;
+  }
+  .marca { display: flex; align-items: center; gap: 14px; font-weight: 700; font-stretch: 115%; }
+  .marca img { width: 44px; height: 44px; border-radius: 11px; }
+  .dominio { color: #ffe7b0; font-weight: 500; }
+</style>
+</head>
+<body>
+  <div class="rayos"></div>
+  <h1 data-titulo></h1>
+  <div class="pie">
+    <span class="marca"><img src="../assets/icon.png" alt="">Introduce</span>
+    <span class="dominio">introducechurch.com</span>
+  </div>
+  <script>
+    const titulos = {
+      es: 'La pantalla de tu iglesia, sin sustos.',
+      en: "Your church's screen, without the panic.",
+    };
+    const idioma = new URLSearchParams(location.search).get('lang') || 'es';
+    document.querySelector('[data-titulo]').textContent = titulos[idioma];
+  </script>
+</body>
+</html>

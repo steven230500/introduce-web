@@ -3,28 +3,75 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Introduce: church projection software</title>
-<meta name="description" content="Lyrics, verses and announcements on your church's screen. Church presentation software built for the person running the desk on a Sunday morning.">
+<title>Introduce: free church presentation software</title>
+<meta name="description" content="Put lyrics, Bible verses and announcements on your church's screen from one window. Free, works offline, and imports your ProPresenter or OpenLP songs.">
 <meta name="theme-color" content="#0e1838">
-
-<meta property="og:title" content="Introduce: church projection software">
-<meta property="og:description" content="Lyrics, verses and announcements on your church's screen. Built for the person running the desk on a Sunday morning.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://introducechurch.com/en/">
-<meta property="og:image" content="https://introducechurch.com/assets/panel-principal.png">
 <link rel="canonical" href="https://introducechurch.com/en/">
 
 <link rel="alternate" hreflang="es" href="https://introducechurch.com/">
 <link rel="alternate" hreflang="en" href="https://introducechurch.com/en/">
 <link rel="alternate" hreflang="x-default" href="https://introducechurch.com/">
 
-<link rel="icon" href="../assets/icon.png">
+<meta property="og:site_name" content="Introduce">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_LA">
+<meta property="og:url" content="https://introducechurch.com/en/">
+<meta property="og:title" content="Introduce: your church's screen, without the panic">
+<meta property="og:description" content="Free church presentation software for lyrics, verses and announcements. Works offline.">
+<meta property="og:image" content="https://introducechurch.com/assets/og-en.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Your church's screen, without the panic. Introduce, introducechurch.com">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="256x256" href="../assets/icon.png">
 <link rel="apple-touch-icon" href="../assets/icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
 <script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://introducechurch.com/#website",
+      "url": "https://introducechurch.com/",
+      "name": "Introduce",
+      "alternateName": "Introduce Church",
+      "inLanguage": [
+        "es",
+        "en"
+      ]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://introducechurch.com/#app",
+      "name": "Introduce",
+      "description": "Church presentation software for lyrics, Bible verses, announcements and video, online or offline.",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "macOS 12+",
+      "softwareVersion": "1.0.0",
+      "inLanguage": [
+        "es",
+        "en"
+      ],
+      "url": "https://introducechurch.com/en/",
+      "downloadUrl": "https://github.com/steven230500/introduce-church/releases/latest",
+      "image": "https://introducechurch.com/assets/og-en.png",
+      "screenshot": "https://introducechurch.com/assets/panel-principal.webp",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -100,9 +147,10 @@
       <div class="presentacion">
         <div>
           <p class="entrada">
-            Lyrics, verses, announcements and video on your church's screen,
-            run from a single window. Built for whoever is at the desk on
-            Sunday, even if they learned it two weeks ago.
+            Free church presentation software for lyrics, Bible verses,
+            announcements and video, run from a single window. Built for
+            whoever is at the desk on Sunday, even if they learned it two weeks
+            ago.
           </p>
           <p class="pista">
             Try the screen above: <kbd>←</kbd> and <kbd>→</kbd> change slides,
@@ -215,7 +263,7 @@
             </div>
           </dl>
           <figure class="captura">
-            <img src="../assets/editor-capas.png" alt="The design editor in layers mode, with the canvas, the guides and the safe area" width="1600" height="937" loading="lazy">
+            <img src="../assets/editor-capas.webp" alt="The design editor in layers mode, with the canvas, the guides and the safe area" width="1600" height="937" loading="lazy" decoding="async">
           </figure>
         </div>
       </div>
@@ -258,7 +306,7 @@
             </div>
           </dl>
           <figure class="captura angosta">
-            <img src="../assets/fondos.png" alt="The background picker with the nine built-in animated scenes and one of the church's own" width="1400" height="1042" loading="lazy">
+            <img src="../assets/fondos.webp" alt="The background picker with the nine built-in animated scenes and one of the church's own" width="1400" height="1042" loading="lazy" decoding="async">
           </figure>
         </div>
       </div>
@@ -327,7 +375,7 @@
             </div>
           </dl>
           <figure class="captura">
-            <img src="../assets/panel-principal.png" alt="The operator console: the running order on the left, the slide grid in the middle and the output with what comes next on the right" width="1600" height="966" loading="lazy">
+            <img src="../assets/panel-principal.webp" alt="The operator console: the running order on the left, the slide grid in the middle and the output with what comes next on the right" width="1600" height="966" loading="lazy" decoding="async">
           </figure>
         </div>
       </div>
@@ -368,7 +416,7 @@
             <span class="explica">Each item counts its time against the plan, at the desk and on the stage display: amber as it gets close, red once it runs over.</span>
           </p>
           <figure class="captura angosta">
-            <img src="../assets/avisos.png" alt="The announcements dialog with two saved announcements and the message for the stage" width="1600" height="1292" loading="lazy">
+            <img src="../assets/avisos.webp" alt="The announcements dialog with two saved announcements and the message for the stage" width="1600" height="1292" loading="lazy" decoding="async">
           </figure>
         </div>
       </div>
@@ -433,6 +481,54 @@
           <li>In System Settings, Privacy &amp; Security, click Open Anyway.</li>
         </ol>
         <p class="aclaracion">Only the first time. The app is not signed with an Apple certificate yet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="questions" class="preguntas" aria-labelledby="questions-titulo">
+    <div class="contenedor">
+      <h2 id="questions-titulo">Questions</h2>
+      <div class="lista-preguntas">
+        <div>
+          <h3>How much does Introduce cost?</h3>
+          <p>It is free to start. Download it without paying, create your church's account, and no card is asked for.</p>
+        </div>
+        <div>
+          <h3>Is it an alternative to ProPresenter?</h3>
+          <p>Yes, built for what most churches have: one computer, one projector and volunteers. It imports songs from ProPresenter 4 to 7, and from ProPresenter 7 it brings the groups and the chosen arrangement.</p>
+        </div>
+        <div>
+          <h3>Does it work without internet?</h3>
+          <p>Yes. The service starts and projects with no network: the Bible, the designs, the backgrounds and the videos already used are on the computer. Anything prepared offline goes out by itself when the connection is back. You need a connection to create the account and share with the team.</p>
+        </div>
+        <div>
+          <h3>Which Bible does it include?</h3>
+          <p>The complete Reina-Valera 1960, the Spanish text, inside the app and offline. Browse by book or type the reference, such as “jn 3:16” or “sal 23”.</p>
+        </div>
+        <div>
+          <h3>What computer do I need?</h3>
+          <p>A Mac with macOS 12 or later, Apple Silicon or Intel. The Windows version already builds and needs a run on a real computer; Linux comes after.</p>
+        </div>
+        <div>
+          <h3>Does it work for livestreaming?</h3>
+          <p>Yes. It opens a window with just the lyrics over green, blue, magenta or black, which you capture in OBS and key over the camera with a Chroma Key or Luma Key filter.</p>
+        </div>
+        <div>
+          <h3>Can I use two screens?</h3>
+          <p>Yes. The projector goes to the screen you choose and the app remembers it. The stage display opens in another window, for the preacher and the musicians.</p>
+        </div>
+        <div>
+          <h3>Can I change slides from my phone?</h3>
+          <p>Yes, from any phone on the same Wi-Fi, with no internet and nothing to install. Turn it on in the app, scan the QR code and type the PIN.</p>
+        </div>
+        <div>
+          <h3>Can several people at the church use it?</h3>
+          <p>Yes. People ask to join the church's organization and an administrator approves them. Songs, designs and colours are shared.</p>
+        </div>
+        <div>
+          <h3>Is it in English?</h3>
+          <p>Yes, in Spanish or English. It asks for the language the first time, and you can change it later in Settings.</p>
+        </div>
       </div>
     </div>
   </section>

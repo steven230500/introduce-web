@@ -18,9 +18,22 @@ index.html      la página en español
 en/index.html   la misma página en inglés
 styles.css      un archivo, ordenado por sección
 demo.js         la pantalla de arriba; los textos vienen de cada página
-assets/         capturas de la app y el ícono
+404.html        lo que ve quien llega a una dirección que no existe
+robots.txt      para los buscadores, con la dirección del sitemap
+sitemap.xml     las dos páginas y sus idiomas
+assets/         capturas de la app (WebP), el ícono y las imágenes para compartir
 tools/shot.mjs  capturas de la página, para revisar un cambio de diseño
+tools/og.mjs    genera assets/og-es.png y og-en.png desde tools/og.html
 ```
+
+## Al publicar una versión nueva de la app
+
+- `softwareVersion` en el bloque `application/ld+json` de las dos páginas, y
+  "Versión 1.0.0" en la sección de descargas.
+- `lastmod` en `sitemap.xml` cuando cambie el contenido.
+- Si cambia el título, `node tools/og.mjs` para rehacer las imágenes para
+  compartir.
+- Una captura nueva: `cwebp -q 82 -m 6 captura.png -o captura.webp`.
 
 ## Verla
 
