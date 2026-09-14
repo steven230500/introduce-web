@@ -7,7 +7,7 @@ HTML y CSS a mano, sin build, sin dependencias. Se abre `index.html` en el
 navegador y ya está: lo que se ve en local es exactamente lo que se publica.
 
 La página es un domingo visto desde la consola. Arriba, una pantalla de
-proyección que se maneja con las mismas teclas de la app (← →, B, 1 a 4).
+proyección que se maneja con las mismas teclas de la app (← →, B, 1 a 3).
 Abajo, el día por horas: claro mientras se prepara y después del culto,
 oscuro mientras las luces del templo están bajas. Una sola tipografía,
 Archivo, usada en todo su ancho: ancha para lo que se lee desde atrás,
