@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Introduce — proyección para iglesias</title>
+<title>Introduce: proyección para iglesias</title>
 <meta name="description" content="Letras, versículos y avisos en la pantalla del templo. Software de proyección para iglesias de habla hispana, pensado para el equipo que está en la consola el domingo.">
-<meta name="theme-color" content="#fbf8f3">
+<meta name="theme-color" content="#0e1838">
 
-<meta property="og:title" content="Introduce — proyección para iglesias">
+<meta property="og:title" content="Introduce: proyección para iglesias">
 <meta property="og:description" content="Letras, versículos y avisos en la pantalla del templo. Hecho para el equipo que está en la consola el domingo.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://introducechurch.com/">
@@ -22,211 +22,279 @@
 <link rel="apple-touch-icon" href="assets/icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
-<header class="bar">
-  <a class="mark" href="#top">
-    <img src="assets/icon.png" alt="" width="26" height="26">
-    <span>Introduce</span>
-  </a>
-  <nav>
-    <a href="#que-hace">Qué hace</a>
-    <a href="#descargas">Descargas</a>
-    <a class="lang" href="/en/" hreflang="en" lang="en">English</a>
-    <a class="ghost" href="https://github.com/steven230500/introduce-church">GitHub</a>
-  </nav>
+<a class="saltar" href="#domingo">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="/">
+      <img src="assets/icon.png" alt="" width="28" height="28">
+      <span>Introduce</span>
+    </a>
+    <nav aria-label="Principal">
+      <a class="opcional" href="#domingo">Qué hace</a>
+      <a href="/en/" hreflang="en" lang="en">English</a>
+      <a class="boton boton-luz" href="#descargar">Descargar</a>
+    </nav>
+  </div>
 </header>
 
-<main id="top">
+<main>
 
-  <section class="hero">
-    <p class="eyebrow">Proyección para iglesias</p>
-    <h1>La pantalla del templo,<br>sin sustos.</h1>
-    <p class="lead">
-      Letras, versículos, avisos y videos en un solo orden. Hecho para la
-      persona que está en la consola un domingo a las ocho de la mañana, no
-      para un técnico de producción.
-    </p>
-    <div class="cta">
-      <a class="btn primary" href="#descargas">Descargar para Mac</a>
-      <a class="btn" href="#que-hace">Ver qué hace</a>
-    </div>
-    <p class="note">Gratis. Sin cuenta de pago para empezar.</p>
+  <section class="escenario" aria-label="Presentación">
+    <div class="contenedor">
+      <div class="monitor">
 
-    <figure class="shot wide">
-      <img src="assets/panel-principal.png" alt="Consola del operador con la lista del servicio, la cuadrícula de slides y el panel de salida" loading="eager">
-    </figure>
-  </section>
+      <div class="pantalla" data-pantalla>
+        <div class="escena" aria-hidden="true"></div>
 
-  <section id="que-hace" class="features">
-    <h2>Lo que resuelve</h2>
+        <div class="slide" data-item="0">
+          <h1>La pantalla del templo, sin sustos.</h1>
+        </div>
 
-    <article class="feature">
-      <div class="copy">
-        <h3>El servicio completo en una lista</h3>
-        <p>
-          Canciones, pasajes, videos, imágenes y los puntos de la predicación
-          en un solo orden. Se arrastra, se renombra, y el domingo pasado se
-          duplica para armar el siguiente en un minuto.
-        </p>
-        <ul>
-          <li>El cursor se mueve sin tocar lo que la congregación está viendo.</li>
-          <li>Se manda a pantalla cuando está listo, no antes.</li>
-          <li>El panel <em>A continuación</em> muestra lo que sigue.</li>
-        </ul>
-      </div>
-      <figure class="shot">
-        <img src="assets/panel-principal.png" alt="Lista del servicio con nueve elementos y la cuadrícula de slides" loading="lazy">
-      </figure>
-    </article>
+        <div class="slide" data-item="1" aria-hidden="true">
+          <p class="letra">¡Santo! ¡Santo! ¡Santo!<br>Señor omnipotente,<br>siempre el labio mío<br>loores te dará.</p>
+        </div>
 
-    <article class="feature reverse">
-      <div class="copy">
-        <h3>La Biblia adentro, sin internet</h3>
-        <p>
-          Reina-Valera 1960 completa dentro de la app. Se busca por libro o se
-          escribe la referencia directo: <code>jn 3:16</code>, <code>sal 23</code>.
-          El pasaje entra al servicio partido en slides que sí caben.
-        </p>
-        <ul>
-          <li>Funciona con el router apagado.</li>
-          <li>Un versículo de último momento son cuatro teclas.</li>
-        </ul>
-      </div>
-      <figure class="shot narrow">
-        <img src="assets/biblia.png" alt="Lista de libros de la Biblia dentro de la app" loading="lazy">
-      </figure>
-    </article>
+        <div class="slide" data-item="1" aria-hidden="true">
+          <p class="letra">¡Santo! ¡Santo! ¡Santo!<br>te adoro reverente,<br>Dios en tres Personas,<br>bendita Trinidad.</p>
+        </div>
 
-    <article class="feature">
-      <div class="copy">
-        <h3>Diseños que se leen desde atrás</h3>
-        <p>
-          Fondo sólido, degradado o foto. Tipografía, tamaño, márgenes,
-          transición. Modo simple para ir rápido y modo de capas con lienzo,
-          guías e imanes cuando alguien quiere colocar cada bloque a mano.
-        </p>
-        <ul>
-          <li>Un salmo largo se achica hasta caber, no se corta.</li>
-          <li>La app avisa si el texto no se va a leer, con el contraste real.</li>
-          <li>Los colores de la foto se ofrecen como paleta.</li>
-          <li>Deshacer y rehacer, y aviso antes de cerrar con cambios.</li>
-        </ul>
-      </div>
-      <figure class="shot">
-        <img src="assets/editor-capas.png" alt="Editor de diseños en modo de capas, con lienzo y área segura" loading="lazy">
-      </figure>
-    </article>
+        <div class="slide" data-item="2" aria-hidden="true">
+          <p class="versiculo">Porque de tal manera amó Dios al mundo, que ha dado a su Hijo unigénito, para que todo aquel que en él cree, no se pierda, mas tenga vida eterna.</p>
+          <p class="cita">Juan 3:16, RVR1960</p>
+        </div>
 
-    <article class="feature reverse">
-      <div class="copy">
-        <h3>Avisos en medio de la predicación</h3>
-        <p>
-          Una línea sobre el slide para la congregación, con reloj para que se
-          quite sola. O un mensaje que solo ve el equipo en la pantalla de
-          escenario. Los avisos de cada domingo se guardan y quedan a un clic.
-        </p>
-        <ul>
-          <li>«Los niños pasan al salón» sin escribirlo otra vez.</li>
-          <li>«Quedan cinco minutos» sin que lo lea nadie más.</li>
-        </ul>
-      </div>
-      <figure class="shot">
-        <img src="assets/avisos.png" alt="Diálogo de avisos con dos avisos guardados y el mensaje de escenario" loading="lazy">
-      </figure>
-    </article>
+        <div class="slide" data-item="3" aria-hidden="true">
+          <p class="anuncio-hora">Esta noche a las 7:00</p>
+          <p class="anuncio">Reunión de jóvenes</p>
+        </div>
 
-  </section>
+        <div class="negro" aria-hidden="true"></div>
+        <div class="encendido" aria-hidden="true"></div>
+      </div>
 
-  <section class="band band-sage">
-    <div class="grid">
-      <div class="card">
-        <h4>Pantalla de escenario</h4>
-        <p>Ventana aparte para el predicador y los músicos: lo que está en pantalla, lo que sigue y los mensajes del equipo.</p>
+      <div class="consola" data-consola
+           data-texto-vivo="En pantalla"
+           data-texto-negro="Pantalla en negro"
+           data-texto-de="de">
+        <p class="estado" data-estado aria-live="polite">En pantalla</p>
+
+        <ol class="lista" aria-label="Orden del servicio">
+          <li><button type="button" data-ir="0"><span class="numero">1</span> Bienvenida</button></li>
+          <li><button type="button" data-ir="1"><span class="numero">2</span> Santo, santo, santo</button></li>
+          <li><button type="button" data-ir="2"><span class="numero">3</span> Juan 3:16</button></li>
+          <li><button type="button" data-ir="3"><span class="numero">4</span> Anuncios</button></li>
+        </ol>
+
+        <div class="mandos">
+          <button type="button" data-accion="anterior" aria-label="Slide anterior"><kbd>←</kbd></button>
+          <button type="button" data-accion="siguiente" aria-label="Siguiente slide"><kbd>→</kbd></button>
+          <button type="button" data-accion="negro" aria-pressed="false"><kbd>B</kbd> Negro</button>
+        </div>
       </div>
-      <div class="card">
-        <h4>Sin internet</h4>
-        <p>El servicio arranca y funciona con la red caída. Lo que se prepara sin red se envía solo cuando vuelve.</p>
+
       </div>
-      <div class="card">
-        <h4>Varias pantallas</h4>
-        <p>Se elige a cuál proyecta y se recuerda. Nadie tiene que gatear detrás del rack durante la primera canción.</p>
+
+      <div class="presentacion">
+        <div>
+          <p class="entrada">
+            Letras, versículos, avisos y videos en la pantalla del templo,
+            manejados desde una sola ventana. Hecho para quien está en la
+            consola el domingo, aunque haya aprendido a usarlo hace dos semanas.
+          </p>
+          <p class="pista">
+            Prueba la pantalla de arriba: <kbd>←</kbd> y <kbd>→</kbd> pasan slides,
+            <kbd>B</kbd> la pone en negro. Son las mismas teclas de la app.
+          </p>
+        </div>
+        <div class="descarga-rapida">
+          <a class="boton boton-luz" href="#descargar">Descargar para Mac</a>
+          <p>Gratis. macOS 12 o superior.</p>
+        </div>
       </div>
-      <div class="card">
-        <h4>Equipo</h4>
-        <p>Varias personas de la misma iglesia, con sus canciones, diseños y colores compartidos.</p>
-      </div>
-      <div class="card">
-        <h4>Control desde el teléfono</h4>
-        <p>Cualquier teléfono en la misma Wi-Fi pasa slides o pone la pantalla en negro. Se abre con un QR y un PIN, sin instalar nada.</p>
-      </div>
-      <div class="card">
-        <h4>Trae tu biblioteca</h4>
-        <p>Canciones de ProPresenter, OpenLP, SongSelect o ChordPro. Se revisan una por una antes de entrar, y las repetidas quedan fuera.</p>
-      </div>
-      <div class="card">
-        <h4>Para la transmisión</h4>
-        <p>Una ventana con solo la letra sobre verde o negro, lista para ponerla encima de la cámara en OBS.</p>
-      </div>
-      <div class="card">
-        <h4>Fondos en movimiento</h4>
-        <p>Escenas animadas incluidas, que no pesan ni necesitan internet, y una pantalla de espera para antes del culto.</p>
-      </div>
+
     </div>
   </section>
 
-  <section id="descargas" class="downloads band band-sky">
-    <h2>Descargas</h2>
-    <p class="lead center">Una sola app. La instalas y ya.</p>
+  <section id="domingo" aria-labelledby="domingo-titulo">
 
-    <div class="dl-grid">
-      <a class="dl ready" href="https://github.com/steven230500/introduce-church/releases/latest">
-        <span class="os">macOS</span>
-        <span class="state">Descargar</span>
-        <span class="meta">Apple Silicon e Intel · macOS 12 o superior</span>
-      </a>
-
-      <div class="dl soon">
-        <span class="os">Windows</span>
-        <span class="state">Próximamente</span>
-        <span class="meta">La versión está compilada, falta probarla en equipo real</span>
-      </div>
-
-      <div class="dl soon">
-        <span class="os">Linux</span>
-        <span class="state">Próximamente</span>
-        <span class="meta">En la lista</span>
-      </div>
+    <div class="domingo-intro contenedor">
+      <h2 id="domingo-titulo">Un domingo en la consola</h2>
+      <p>
+        Desde que se arma el servicio la noche anterior hasta que se apaga el
+        proyector. Así se ve el trabajo con Introduce.
+      </p>
     </div>
 
-    <p class="note center">
-      En Mac, la primera vez macOS avisa que no puede verificar la app: en
-      <strong>Ajustes del Sistema → Privacidad y seguridad</strong>, pulsa
-      <strong>Abrir igualmente</strong>. Todavía no está firmada con certificado de Apple.
-    </p>
+    <article class="parada">
+      <div class="contenedor">
+        <p class="reloj"><span class="dia">Sábado</span><time datetime="21:40">9:40</time><span class="meridiano">p. m.</span></p>
+        <div class="cuerpo">
+          <h3>El servicio se arma en una lista</h3>
+          <p>
+            Canciones, pasajes, videos, imágenes y los puntos de la predicación,
+            en el orden del culto. Se arrastra para reordenar, y el domingo
+            pasado se duplica para empezar el siguiente.
+          </p>
+          <ul>
+            <li>Las canciones de <strong>ProPresenter, OpenLP, SongSelect o ChordPro</strong> entran revisadas una por una. Las repetidas se quedan fuera.</li>
+            <li>El editor de diseños avisa si la letra no se va a leer desde la última fila, y un salmo largo se achica hasta caber en vez de cortarse.</li>
+            <li>Todo el equipo de la iglesia comparte canciones, diseños y colores.</li>
+          </ul>
+          <figure class="captura">
+            <img src="assets/editor-capas.png" alt="Editor de diseños en modo de capas, con el lienzo, las guías y el área segura" width="1600" height="937" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="parada">
+      <div class="contenedor">
+        <p class="reloj"><span class="dia">Domingo</span><time datetime="07:50">7:50</time><span class="meridiano">a. m.</span></p>
+        <div class="cuerpo">
+          <h3>Se conecta el proyector, y ya</h3>
+          <p>
+            Se elige una vez en qué pantalla proyecta, y la app lo recuerda. Si
+            el internet del templo no llega, el servicio arranca igual: lo
+            preparado está guardado en la computadora.
+          </p>
+          <ul>
+            <li>Mientras la gente llega, la pantalla de espera muestra el nombre de la iglesia y la cuenta regresiva. <kbd>W</kbd> la pone y la quita.</li>
+            <li>Nueve fondos en movimiento vienen incluidos. No pesan y no necesitan internet.</li>
+          </ul>
+          <figure class="captura angosta">
+            <img src="assets/fondos.png" alt="Selector de fondos con las nueve escenas animadas incluidas y un fondo propio de la iglesia" width="1400" height="1042" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="parada apagado">
+      <div class="contenedor">
+        <p class="reloj"><span class="dia">Alabanza</span><time datetime="10:00">10:00</time><span class="meridiano">a. m.</span></p>
+        <div class="cuerpo">
+          <h3>Nadie ve el slide equivocado</h3>
+          <p>
+            El cursor se mueve por la lista sin tocar lo que ve la congregación.
+            Lo que sigue está a la vista, y se manda a pantalla cuando el músico
+            llega al coro.
+          </p>
+          <ul>
+            <li>Los músicos tienen su propia <strong>pantalla de escenario</strong>: lo que está, lo que sigue y los mensajes del equipo.</li>
+            <li>Desde cualquier teléfono en la misma Wi-Fi se pasan slides. Se conecta con un QR y un PIN, sin instalar nada.</li>
+            <li>Para la transmisión, una ventana con solo la letra sobre verde o negro, lista para OBS.</li>
+          </ul>
+          <figure class="captura">
+            <img src="assets/panel-principal.png" alt="Consola del operador: el orden del servicio a la izquierda, la cuadrícula de slides al centro y la salida con lo que sigue a la derecha" width="1600" height="966" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="parada apagado">
+      <div class="contenedor">
+        <p class="reloj"><span class="dia">Predicación</span><time datetime="11:15">11:15</time><span class="meridiano">a. m.</span></p>
+        <div class="cuerpo">
+          <h3>La predicación se alarga, y el equipo lo sabe</h3>
+          <p>
+            Un versículo que no estaba en la lista son cuatro teclas: <kbd>V</kbd>,
+            «jn 3:16» y Enter. La Reina-Valera 1960 está completa dentro de la
+            app, sin internet.
+          </p>
+          <ul>
+            <li>Un aviso aparece sobre el slide y se quita solo: <strong>«Los niños pasan al salón»</strong>.</li>
+            <li>Un mensaje que solo ve el predicador en la pantalla de escenario: <strong>«Quedan cinco minutos»</strong>.</li>
+          </ul>
+          <p class="cronometro" aria-label="Cuatro minutos cuarenta y dos de cuatro planeados, cuarenta y dos segundos de más">
+            <span class="tiempo">4:42</span>
+            <span class="tiempo plan">/ 4:00</span>
+            <span class="tiempo pasado">+0:42</span>
+            <span class="explica">Cada elemento cuenta su tiempo contra lo ensayado, en la consola y en el escenario.</span>
+          </p>
+          <figure class="captura angosta">
+            <img src="assets/avisos.png" alt="Diálogo de avisos con dos avisos guardados y el mensaje para el escenario" width="1600" height="1292" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </article>
+
+    <article class="parada final">
+      <div class="contenedor">
+        <p class="reloj"><span class="dia">Después</span><time datetime="12:40">12:40</time><span class="meridiano">p. m.</span></p>
+        <div class="cuerpo">
+          <h3>Termina el culto, queda el reporte</h3>
+          <p>
+            Lo que se proyectó queda anotado con el número CCLI de cada canción,
+            para el reporte de licencias. Lo que se pasó en el ensayo no cuenta.
+            El domingo siguiente empieza duplicando este.
+          </p>
+        </div>
+      </div>
+    </article>
+
   </section>
 
-  <section class="closing band band-sand">
-    <h2>Hecho en una iglesia, para iglesias</h2>
-    <p>
-      Cada cosa que hace existe porque algo salió mal un domingo. Si a tu
-      equipo le falta algo, se puede pedir.
-    </p>
-    <div class="cta center">
-      <a class="btn primary" href="#descargas">Descargar</a>
-      <a class="btn" href="https://github.com/steven230500/introduce-church/issues">Pedir algo</a>
+  <section id="descargar" class="descargas" aria-labelledby="descargar-titulo">
+    <div class="contenedor">
+      <h2 id="descargar-titulo">Descargar Introduce</h2>
+
+      <ul class="plataformas">
+        <li>
+          <span class="so">macOS</span>
+          <p class="detalle">Versión 1.0.0. Apple Silicon e Intel, macOS 12 o superior.</p>
+          <a class="boton boton-tinta" href="https://github.com/steven230500/introduce-church/releases/latest">Descargar para Mac</a>
+        </li>
+        <li>
+          <span class="so">Windows</span>
+          <p class="detalle">Ya compila. Falta probarla en una computadora real antes de publicarla.</p>
+          <span class="pendiente">En camino</span>
+        </li>
+        <li>
+          <span class="so">Linux</span>
+          <p class="detalle">Después de Windows.</p>
+          <span class="pendiente">En la lista</span>
+        </li>
+      </ul>
+
+      <div class="instalar">
+        <h3>Instalar en Mac</h3>
+        <ol>
+          <li>Descomprime el archivo y arrastra Introduce a Aplicaciones.</li>
+          <li>Ábrela. macOS avisa que no puede verificarla: pulsa Listo.</li>
+          <li>En Ajustes del Sistema, Privacidad y seguridad, pulsa Abrir igualmente.</li>
+        </ol>
+        <p class="aclaracion">Solo la primera vez. La app todavía no está firmada con un certificado de Apple.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre" aria-labelledby="cierre-titulo">
+    <div class="contenedor">
+      <h2 id="cierre-titulo">Hecho en una iglesia, para iglesias.</h2>
+      <p>
+        Cada cosa que hace existe porque algo salió mal un domingo. Si a tu
+        equipo le falta algo, pídelo.
+      </p>
+      <div class="acciones">
+        <a class="boton boton-luz" href="#descargar">Descargar para Mac</a>
+        <a href="https://github.com/steven230500/introduce-church/issues">Pedir una función</a>
+      </div>
+
+      <footer class="pie">
+        <p>Introduce, proyección para iglesias.</p>
+        <p><a href="https://github.com/steven230500/introduce-church">Código fuente</a></p>
+      </footer>
     </div>
   </section>
 
 </main>
 
-<footer>
-  <p>Introduce · proyección para iglesias</p>
-  <p><a href="https://github.com/steven230500/introduce-church">Código</a></p>
-</footer>
-
+<script src="demo.js" defer></script>
 </body>
 </html>

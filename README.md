@@ -6,13 +6,18 @@ software de proyección para iglesias.
 HTML y CSS a mano, sin build, sin dependencias. Se abre `index.html` en el
 navegador y ya está: lo que se ve en local es exactamente lo que se publica.
 
-Papel tibio, serif clásica para los títulos y franjas en pastel. Las capturas
-de la app son lo único oscuro de la página, que es justo lo que hace que uno
-las mire.
+La página es un domingo visto desde la consola. Arriba, una pantalla de
+proyección que se maneja con las mismas teclas de la app (← →, B, 1 a 4).
+Abajo, el día por horas: claro mientras se prepara y después del culto,
+oscuro mientras las luces del templo están bajas. Una sola tipografía,
+Archivo, usada en todo su ancho: ancha para lo que se lee desde atrás,
+angosta para el reloj.
 
 ```
-index.html      la página entera
+index.html      la página en español
+en/index.html   la misma página en inglés
 styles.css      un archivo, ordenado por sección
+demo.js         la pantalla de arriba; los textos vienen de cada página
 assets/         capturas de la app y el ícono
 tools/shot.mjs  capturas de la página, para revisar un cambio de diseño
 ```
