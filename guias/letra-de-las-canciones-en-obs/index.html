@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo poner la letra de las canciones en OBS para la transmisión de la iglesia</title>
+<meta name="description" content="La letra encima de la cámara, sin tapar al grupo: una ventana con solo las palabras, capturada en OBS y recortada con Chroma Key o Luma Key.">
+<meta name="theme-color" content="#0e1838">
+<link rel="canonical" href="https://introducechurch.com/guias/letra-de-las-canciones-en-obs/">
+
+<meta property="og:site_name" content="Introduce">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="es_LA">
+<meta property="og:url" content="https://introducechurch.com/guias/letra-de-las-canciones-en-obs/">
+<meta property="og:title" content="Cómo poner la letra de las canciones en OBS para la transmisión de la iglesia">
+<meta property="og:description" content="La letra encima de la cámara, sin tapar al grupo: una ventana con solo las palabras, capturada en OBS y recortada con Chroma Key o Luma Key.">
+<meta property="og:image" content="https://introducechurch.com/assets/og-es.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="256x256" href="/assets/icon.png">
+<link rel="apple-touch-icon" href="/assets/icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Cómo poner la letra de las canciones en la transmisión con OBS",
+      "description": "La letra encima de la cámara, sin tapar al grupo: una ventana con solo las palabras, capturada en OBS y recortada con Chroma Key o Luma Key.",
+      "inLanguage": "es",
+      "datePublished": "2026-09-14",
+      "dateModified": "2026-09-14",
+      "author": {
+        "@type": "Organization",
+        "name": "Introduce",
+        "url": "https://introducechurch.com/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Introduce",
+        "url": "https://introducechurch.com/"
+      },
+      "mainEntityOfPage": "https://introducechurch.com/guias/letra-de-las-canciones-en-obs/",
+      "image": "https://introducechurch.com/assets/og-es.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Introduce",
+          "item": "https://introducechurch.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guías",
+          "item": "https://introducechurch.com/guias/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Cómo poner la letra de las canciones en la transmisión con OBS",
+          "item": "https://introducechurch.com/guias/letra-de-las-canciones-en-obs/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="/">
+      <img src="/assets/icon.png" alt="" width="28" height="28">
+      <span>Introduce</span>
+    </a>
+    <nav aria-label="Principal">
+      <a class="opcional" href="/#domingo">Qué hace</a>
+      <a href="/guias/">Guías</a>
+      <a class="boton boton-luz" href="/#descargar">Descargar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <section class="guia-cabeza">
+    <div class="contenedor">
+      <p class="migas"><a href="/guias/">Guías</a></p>
+      <h1>Cómo poner la letra de las canciones en la transmisión con OBS</h1>
+      <p class="resumen">La letra encima de la cámara, sin tapar al grupo: una ventana con solo las palabras, capturada en OBS y recortada con Chroma Key o Luma Key.</p>
+      <p class="fecha">Actualizada el 14 de septiembre de 2026</p>
+    </div>
+  </section>
+
+  <div class="contenedor">
+    <article class="guia-cuerpo">
+<p>La transmisión se ve mejor cuando la gente en casa ve al grupo y la letra al mismo tiempo, no una captura del proyector que tapa la cámara. La forma de lograrlo es sencilla: una ventana que muestra solo la letra sobre un color plano, y un filtro en OBS que quita ese color.</p>
+
+<h2>Cómo funciona</h2>
+<p>El programa de proyección abre una segunda ventana, aparte del proyector, con la letra sobre verde, azul, magenta o negro. OBS captura esa ventana y le aplica un filtro de clave: <strong>Chroma Key</strong> quita un color, y <strong>Luma Key</strong> quita el negro. Lo que queda son las palabras, encima de la cámara.</p>
+<p>La ventana sigue al proyector sin necesitar internet, pero muestra solo palabras: cuando en el proyector hay una foto, un video, la pantalla de espera o negro, la transmisión deja ver solo la cámara.</p>
+
+<h2>1. Abre la ventana de transmisión</h2>
+<ol>
+<li>En Introduce, pulsa <strong>Transmisión</strong> en la barra de arriba.</li>
+<li>Elige el <strong>Fondo</strong>: verde si tu escena no tiene verde, azul o magenta si lo tiene, o negro si vas a usar Luma Key.</li>
+<li>Elige la <strong>Posición</strong>, abajo o arriba, y el <strong>Tamaño</strong>. La vista previa del mismo diálogo muestra cómo va a quedar.</li>
+<li>Decide si quieres <strong>Barra oscura detrás de la letra</strong>. Sin barra, la letra lleva contorno para leerse sobre cualquier toma.</li>
+<li>Pulsa <strong>Abrir ventana de transmisión</strong>. No la minimices: OBS no puede capturar una ventana minimizada.</li>
+</ol>
+
+<h2>2. Captúrala en OBS</h2>
+<ol>
+<li>En la escena de la transmisión, agrega una fuente nueva con el botón <strong>+</strong> de Fuentes.</li>
+<li><strong>En Windows:</strong> elige <strong>Captura de ventana</strong> (Window Capture). <strong>En Mac:</strong> elige <strong>Captura de pantalla de macOS</strong> (macOS Screen Capture) y, como método, captura de ventana.</li>
+<li>En la lista de ventanas, elige <strong>Introduce · Transmisión</strong>.</li>
+<li>Deja la fuente por encima de la cámara en la lista de Fuentes y ajústala al tamaño de la escena.</li>
+</ol>
+
+<h2>3. Quita el fondo</h2>
+<ol>
+<li>Clic derecho sobre la fuente, <strong>Filtros</strong>.</li>
+<li>En los filtros de efectos (Effect Filters), pulsa <strong>+</strong> y agrega <strong>Chroma Key</strong>. Según el idioma de OBS, el nombre puede aparecer traducido.</li>
+<li>En el tipo de color (Key Color Type), elige el mismo color que en Introduce: verde, azul o magenta.</li>
+<li>Si elegiste fondo negro, agrega <strong>Luma Key</strong> en vez de Chroma Key.</li>
+</ol>
+<p>Si queda un borde de color alrededor de las letras, sube un poco la <strong>similitud</strong> (Similarity) del filtro. Si se empiezan a borrar partes de las letras, bájala.</p>
+
+<div class="nota"><p><strong>Por qué sin sombras:</strong> una sombra difusa detrás de la letra mezcla el color de fondo con gris, y el filtro no sabe si quitarla o no. El resultado es un halo verde. Por eso la ventana de transmisión usa barra sólida o contorno, nunca sombra suave.</p></div>
+
+<h2>Problemas comunes</h2>
+<ul>
+<li><strong>En Mac, la captura sale negra:</strong> OBS no tiene permiso para grabar la pantalla. Ajustes del Sistema, Privacidad y seguridad, Grabación de pantalla: activa OBS y ábrelo de nuevo.</li>
+<li><strong>La ventana no aparece en la lista:</strong> tiene que estar abierta en Introduce antes de buscarla en OBS.</li>
+<li><strong>Las letras tienen el color del fondo:</strong> la ropa o el decorado usan el mismo color. Cambia el fondo a azul o magenta, o usa negro con Luma Key.</li>
+<li><strong>La letra no se ve en la transmisión pero sí en el proyector:</strong> revisa que la fuente esté arriba de la cámara en la lista de Fuentes y que el filtro sea del color correcto.</li>
+</ul>
+    </article>
+  </div>
+
+  <section class="guias-portada" aria-labelledby="mas-guias">
+    <div class="contenedor">
+      <div>
+        <h2 id="mas-guias">Otras guías</h2>
+        <ul class="lista-guias">
+          <li><a href="/guias/proyectar-letras-en-la-iglesia/"><span class="titulo">Cómo proyectar las letras de las canciones en la iglesia</span><span class="de-que-trata">Qué se necesita, cómo conectar el proyector como pantalla extendida y cómo preparar letras que se lean desde la última fila. Con o sin internet.</span></a></li>
+          <li><a href="/guias/biblia-en-pantalla-sin-internet/"><span class="titulo">Cómo proyectar la Biblia en la iglesia sin internet</span><span class="de-que-trata">Pasajes preparados de antemano y versículos de último momento en la pantalla, con la Reina-Valera 1960 completa dentro de la computadora.</span></a></li>
+          <li><a href="/guias/de-propresenter-a-introduce/"><span class="titulo">Cómo pasar tus canciones de ProPresenter u OpenLP a Introduce</span><span class="de-que-trata">La biblioteca completa de otro programa en unos minutos, revisada canción por canción antes de agregarla, con el copyright y el número CCLI.</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cierre" aria-labelledby="cierre-titulo">
+    <div class="contenedor">
+      <h2 id="cierre-titulo">Introduce es gratis.</h2>
+      <p>
+        Letras, versículos, avisos y videos en la pantalla de la iglesia, con o
+        sin internet. Para Mac, con Windows en beta.
+      </p>
+      <div class="acciones">
+        <a class="boton boton-luz" href="https://github.com/steven230500/introduce-church/releases/latest">Descargar para Mac</a>
+        <a href="/">Ver qué hace</a>
+      </div>
+
+      <footer class="pie">
+        <p>Introduce, proyección para iglesias.</p>
+        <p><a href="/guias/">Guías</a> · <a href="https://github.com/steven230500/introduce-church">Código fuente</a></p>
+      </footer>
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

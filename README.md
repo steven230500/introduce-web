@@ -18,6 +18,7 @@ index.html      la página en español
 en/index.html   la misma página en inglés
 styles.css      un archivo, ordenado por sección
 demo.js         la pantalla de arriba; los textos vienen de cada página
+guias/          guías paso a paso en español, una carpeta por guía
 404.html        lo que ve quien llega a una dirección que no existe
 robots.txt      para los buscadores, con la dirección del sitemap
 sitemap.xml     las dos páginas y sus idiomas

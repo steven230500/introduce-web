@@ -90,6 +90,10 @@ a { color: inherit; text-underline-offset: 0.18em; text-decoration-thickness: 1p
 .boton-tinta { background: var(--tinta); color: #fff; }
 .boton-tinta:hover { background: #22306a; }
 
+/* For what can be downloaded but is not finished: the Windows beta. */
+.boton-contorno { border: 1px solid var(--tinta); color: var(--tinta); background: transparent; }
+.boton-contorno:hover { background: #e2e6ef; }
+
 /* ── Header ──────────────────────────────────────────────────────────────── */
 
 .cabecera {
@@ -653,6 +657,8 @@ html:not(.js) .pista { display: none; }
 .instalar li { padding-left: 6px; margin-bottom: 8px; }
 .instalar li::marker { font-weight: 700; font-variant-numeric: tabular-nums; }
 
+.instalar + .instalar { margin-top: 40px; }
+
 .instalar .aclaracion { grid-column: 2; margin: 4px 0 0; padding-left: calc(1.4em + 6px); font-size: 16px; color: var(--gris); }
 
 /* ── Questions ───────────────────────────────────────────────────────────── */
@@ -687,6 +693,133 @@ html:not(.js) .pista { display: none; }
   font-size: 17px;
   color: var(--gris);
 }
+
+/* ── Guides ──────────────────────────────────────────────────────────────── */
+
+.guias-portada {
+  padding-bottom: clamp(80px, 10vw, 128px);
+}
+
+.guias-portada .contenedor > div {
+  padding-top: clamp(48px, 6vw, 72px);
+  border-top: 1px solid var(--linea);
+}
+
+.guias-portada h2 {
+  margin: 0;
+  font-size: clamp(28px, 3.4vw, 40px);
+  line-height: 1.08;
+  font-weight: 760;
+  font-stretch: 116%;
+  letter-spacing: -0.01em;
+}
+
+.lista-guias {
+  max-width: 52rem;
+  margin: 28px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--linea);
+}
+
+.lista-guias li { border-bottom: 1px solid var(--linea); }
+
+.lista-guias a {
+  display: block;
+  padding-block: 24px;
+  text-decoration: none;
+}
+
+.lista-guias .titulo {
+  display: block;
+  font-size: clamp(21px, 2.4vw, 26px);
+  line-height: 1.25;
+  font-weight: 700;
+  font-stretch: 108%;
+}
+
+.lista-guias a:hover .titulo { text-decoration: underline; text-underline-offset: 0.16em; }
+
+.lista-guias .de-que-trata {
+  display: block;
+  max-width: 40em;
+  margin-top: 6px;
+  font-size: 17px;
+  color: var(--gris);
+}
+
+.guia-cabeza {
+  background: var(--templo);
+  color: #fff;
+  padding-block: clamp(32px, 6vw, 72px) clamp(56px, 8vw, 96px);
+}
+
+.migas { margin: 0 0 22px; font-size: 15px; color: var(--gris-noche); }
+.migas a { color: var(--gris-noche); }
+.migas a:hover { color: #fff; }
+
+.guia-cabeza h1 {
+  max-width: 20ch;
+  margin: 0;
+  font-size: clamp(36px, 5.6vw, 64px);
+  line-height: 1.04;
+  font-weight: 780;
+  font-stretch: 118%;
+  letter-spacing: -0.015em;
+  color: var(--lampara);
+  text-wrap: balance;
+}
+
+.guia-cabeza .resumen {
+  max-width: 36em;
+  margin: 22px 0 0;
+  font-size: clamp(18px, 2vw, 21px);
+  line-height: 1.5;
+  color: #e6eaf5;
+}
+
+.guia-cabeza .fecha { margin: 18px 0 0; font-size: 15px; color: var(--gris-noche); }
+
+.guia-cuerpo {
+  max-width: 44rem;
+  padding-block: clamp(48px, 7vw, 88px);
+}
+
+.guia-cuerpo h2 {
+  margin: 56px 0 0;
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1.12;
+  font-weight: 740;
+  font-stretch: 112%;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.guia-cuerpo > p:first-child { margin-top: 0; font-size: 21px; }
+
+.guia-cuerpo p,
+.guia-cuerpo li { font-size: 19px; line-height: 1.65; }
+
+.guia-cuerpo p { margin: 16px 0 0; }
+
+.guia-cuerpo ul,
+.guia-cuerpo ol { margin: 16px 0 0; padding-left: 1.3em; }
+
+.guia-cuerpo li { margin-top: 10px; padding-left: 4px; }
+.guia-cuerpo ol > li::marker { font-weight: 700; font-variant-numeric: tabular-nums; }
+.guia-cuerpo strong { font-weight: 660; }
+.guia-cuerpo a { text-decoration-thickness: 1px; }
+
+/* What only applies when the software is Introduce, set apart from the advice
+   that holds whatever program the church uses. */
+.nota {
+  margin: 28px 0 0;
+  padding: 18px 22px 20px;
+  border-left: 3px solid var(--tinta);
+  background: #f1f3f8;
+}
+
+.nota p { margin: 0; font-size: 18px; }
 
 /* ── Closing ─────────────────────────────────────────────────────────────── */
 
