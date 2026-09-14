@@ -1,0 +1,40 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # The droplet serves this repository's files straight from a clone, so a
+      # deploy is a pull. The key is restricted there to exactly that command,
+      # which is why the script below is ignored: a leaked secret cannot be
+      # used as a general shell.
+      - name: Pull on the droplet
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DROPLET_HOST }}
+          username: ${{ secrets.DROPLET_USER }}
+          key: ${{ secrets.DROPLET_SSH_KEY }}
+          script: deploy
+
+      # Skipped until the domain points at the droplet and SITE_URL is set.
+      - name: Check the page answers
+        if: ${{ vars.SITE_URL != '' }}
+        run: |
+          for attempt in $(seq 1 10); do
+            if curl -fsS -m 10 -o /dev/null "${{ vars.SITE_URL }}"; then
+              echo "site up"
+              exit 0
+            fi
+            sleep 5
+          done
+          echo "the page did not answer after the deploy"
+          exit 1
