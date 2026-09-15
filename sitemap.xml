@@ -35,4 +35,16 @@
     <loc>https://introducechurch.com/guias/de-propresenter-a-introduce/</loc>
     <lastmod>2026-09-14</lastmod>
   </url>
+  <url>
+    <loc>https://introducechurch.com/privacidad/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://introducechurch.com/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://introducechurch.com/en/privacy/"/>
+  </url>
+  <url>
+    <loc>https://introducechurch.com/en/privacy/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://introducechurch.com/privacidad/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://introducechurch.com/en/privacy/"/>
+  </url>
 </urlset>

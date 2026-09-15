@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+# The download buttons: following them counts a download.
+Disallow: /descargar/
 
 Sitemap: https://introducechurch.com/sitemap.xml
